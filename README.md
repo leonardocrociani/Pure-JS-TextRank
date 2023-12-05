@@ -12,7 +12,7 @@ This implementation offers flexibility through four key parameters:
 
 - **encoding:** Choose between two sentence considerations: "as_it_is" or "bag_of_words".
 - **distance:** Four distance metrics available: "jaccard", "custom", "dice_coefficient", and "overlap".
-- **alfa:** A pivotal factor in the PageRank algorithm, influencing ranking computation. (Explanatory link included)
+- **alfa:** A pivotal factor in the PageRank algorithm, influencing ranking computation. (The so-called [*dumping factor*](https://en.wikipedia.org/wiki/PageRank#:~:text=Damping%20factor%5B,set%20around%200.85))
 - **pr_iterations:** Control the number of PageRank iterations for precision.
 
 Additionally, you can determine the number of top-sentences to extract by providing a function to the `summarize()` method. For instance:
