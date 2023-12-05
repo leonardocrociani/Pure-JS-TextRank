@@ -59,7 +59,7 @@ const union = (set1, set2) => {
     return arr;
 }
 
-const build_weight_dictonary = (sentences, content) => {
+const get_tf_idf = (sentences, content) => {
     const dictionary = {};
 
     for (const sentence of sentences) {
@@ -131,7 +131,7 @@ const remove_stopwords = (set) => {
 module.exports = {
     encodings,
     distances,
-    build_weight_dictonary,
+    get_tf_idf,
     get_saliency
 }
 
