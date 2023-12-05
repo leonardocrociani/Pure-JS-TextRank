@@ -19,7 +19,7 @@ Additionally, you can determine the number of top-sentences to extract by provid
 
 ```javascript
 r.summarize(sentences => Math.floor(sentences.length * 0.1));
-
+```
 ---
 
 ## Example
