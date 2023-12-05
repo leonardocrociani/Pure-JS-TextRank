@@ -18,7 +18,7 @@ This implementation offers flexibility through four key parameters:
 Additionally, you can determine the number of top-sentences to extract by providing a function to the `summarize()` method. For instance:
 
 ```javascript
-r.summarize(sentences => Math.floor(sentences.length * 0.1));
+tr.summarize(sentences => Math.floor(sentences.length * 0.1));
 ```
 
 ## Example
