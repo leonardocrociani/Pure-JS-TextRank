@@ -2,7 +2,7 @@ const fs = require('fs');
 const { 
     encodings, 
     distances, 
-    build_weight_dictonary, 
+    get_tf_idf, 
     get_saliency 
 } = require('./utils.js')
 
@@ -61,9 +61,7 @@ class TextRank {
 
         console.log('Graph successfully loaded (' + this.sentences.length + ' sentences).')
 
-        console.log('Building dictonary...');
-
-        this.tf_idf = build_weight_dictonary(this.sentences, this.content);
+        this.tf_idf = get_tf_idf(this.sentences, this.content);
 
         this.sentences = this.sentences
             .map(el => {
@@ -73,7 +71,7 @@ class TextRank {
                 }
             });
 
-        console.log('Dictonary successfully built.')
+        console.log('Tf*IDf matrix successfully built.')
     }
 
     summarize(choose_k = () => 5) {
