@@ -10,10 +10,10 @@ TextRank, an unsupervised graph-based ranking algorithm, is adept at condensing 
 
 This implementation offers flexibility through four key parameters:
 
-- **Encoding:** Choose between two sentence considerations: 'as_it_is' or 'bag_of_words'.
-- **Distance Options:** Four distance metrics available: Jaccard, Custom, Dice Coefficient, and Overlap.
-- **Alpha (α):** A pivotal factor in the PageRank algorithm, influencing ranking computation. (Explanatory link included)
-- **PR Iterations:** Control the number of PageRank iterations for precision.
+- **encoding:** Choose between two sentence considerations: "as_it_is" or "bag_of_words".
+- **distance:** Four distance metrics available: "jaccard", "custom", "dice_coefficient", and "overlap".
+- **alfa:** A pivotal factor in the PageRank algorithm, influencing ranking computation. (Explanatory link included)
+- **pr_iterations:** Control the number of PageRank iterations for precision.
 
 Additionally, you can determine the number of top-sentences to extract by providing a function to the `summarize()` method. For instance:
 
