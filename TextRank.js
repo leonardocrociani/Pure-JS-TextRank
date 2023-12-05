@@ -80,7 +80,7 @@ class TextRank {
         const ranked = this.apply_page_rank()
         const enriched = ranked.map((el, idx) => { return { el, idx } })
         enriched.sort((a, b) => a.el - b.el);
-        const indexes = enriched.splice(0, choose_k()).map(el => el.idx);
+        const indexes = enriched.splice(0, choose_k(this.sentences)).map(el => el.idx);
         console.log(indexes);
         indexes.sort();
         const sentences = [];
